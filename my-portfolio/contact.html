@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們｜台灣 SEO 行銷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">台灣 SEO 行銷</a>
+    <nav aria-label="主要導覽">
+      <a href="index.html">首頁</a>
+      <a href="about.html">公司介紹</a>
+      <a href="contact.html" aria-current="page">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">CONTACT</p>
+      <h1>聯絡我們</h1>
+      <p>請填寫以下資料與需求，我們收到後將盡快與您聯繫。</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-note">
+        <h2>期待聽見您的需求</h2>
+        <p>請留下正確的聯絡資料，方便我們回覆您。</p>
+        <p class="small-note">標示 * 的欄位為必填。</p>
+      </div>
+
+      <!-- 使用前請將 YOUR_EMAIL@example.com 改成你要收信的電子郵件地址。 -->
+      <form class="contact-form"
+            action="https://formsubmit.co/YOUR_EMAIL@example.com"
+            method="POST">
+        <input type="hidden" name="_subject" value="網站收到新的客戶聯絡表單">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY/thank-you.html">
+
+        <label for="name">姓名 *</label>
+        <input id="name" type="text" name="姓名" placeholder="請輸入您的姓名" autocomplete="name" required>
+
+        <label for="phone">電話 *</label>
+        <input id="phone" type="tel" name="電話" placeholder="請輸入您的電話" autocomplete="tel" required>
+
+        <label for="email">Email *</label>
+        <input id="email" type="email" name="Email" placeholder="請輸入您的電子郵件" autocomplete="email" required>
+
+        <label for="message">聯絡內容 *</label>
+        <textarea id="message" name="聯絡內容" rows="6" placeholder="請輸入您的問題或需求" required></textarea>
+
+        <label class="consent">
+          <input type="checkbox" name="個資告知" value="已知悉" required>
+          <span>我同意將以上資料提供給本網站，以便回覆本次聯絡需求。</span>
+        </label>
+
+        <button class="button" type="submit">送出資料</button>
+        <p class="form-hint">送出後可能需要先完成驗證；首次使用時，收件信箱也必須完成 FormSubmit 的啟用確認。</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 台灣 SEO 行銷｜版權所有</footer>
+</body>
+</html>
